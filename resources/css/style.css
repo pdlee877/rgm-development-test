@@ -7,7 +7,8 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -134,7 +135,6 @@ header {
     transform: translate(-38%, 325%);
     width: 1140px;
     height: 75px;
-    z-index: 999;
 }
 
 .logo {
@@ -143,6 +143,8 @@ header {
     float: left;
     margin-top: 20px;
 }
+
+/*-----Main Nav-----*/
 
 .main-nav {
     float: right;
@@ -171,6 +173,45 @@ header {
     border-bottom: 2px solid #ffa634;
 }
 
+/*-----Sticky Nav-----*/
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 2px #ededed;
+}
+
+.sticky .main-nav { margin-top: 15px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 9px 0;
+    color: #555;
+}
+
+.sticky .logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
+}
+
+/*-----Mobile Nav-----*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon .hamburger {
+    font-size: 200%;
+    color: #fff;
+}
+
+
 
 /*---------------------*/
 /*ABOUT*/
@@ -195,14 +236,14 @@ header {
 
 .section-straffon {
     background-color: #f7f7f7;
-    padding: 20px 175px;
-    margin: 0px;
-    position: absolute;
+    height: 100vh;
+    
 }
 
+
 .straffon-about {
-    list-style-type: none;
-    margin: 0px;
+    list-style-type: none; 
+    margin: 0px; 
     padding: 0px;
 }
 
