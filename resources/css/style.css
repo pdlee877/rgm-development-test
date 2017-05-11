@@ -18,7 +18,6 @@ body {
     overflow-x: hidden;
 }
 
-/*
 .clearfix {zoom: 1}
 .clearfix:after {
     content: '.';
@@ -27,7 +26,6 @@ body {
     height: 0;
     visibility: hidden;
 }
-*/
 
 /*---------------------*/
 /*REUSABLE COMPONENTS*/
@@ -68,6 +66,8 @@ h1 {
     color: #fff;
     font-size: 240%;
     word-spacing: 4px;
+    position: absolute;
+    line-height: 40px;
 
 }
 
@@ -100,6 +100,7 @@ h2:after {
 h3 {
     text-transform: uppercase;
     text-align: center;
+    padding-top: 10px;
 }
 
 h3:after {
@@ -206,6 +207,11 @@ header {
     display: none;
 }
 
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
 .mobile-nav-icon .hamburger {
     font-size: 200%;
     color: #fff;
@@ -236,103 +242,67 @@ header {
 
 .section-straffon {
     background-color: #f7f7f7;
-    height: 100vh;
-    
+    height: 100vh;    
 }
 
-
-.straffon-about {
-    list-style-type: none; 
-    margin: 0px; 
-    padding: 0px;
+.straffon-showcase {
+    list-style: none;
+    width: 100%;
+    display: block;
+    text-align: center; 
 }
 
-.straffon-about li {
-    float: left;
-    padding: 0px;
-    position: relative;
+.straffon-showcase li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+}
+
+.straffon-photo {
+    width: 100%;
+/*    margin: 0;*/
     overflow: hidden;
+    position: relative;
 }
 
-.straffon-about li:hover .caption {
+.straffon-photo img {
     opacity: 1;
+    display: block;
+    transition: .5s ease;
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
 }
 
-.straffon-about li:hover img {
-    opacity: 1;
-    transform: scale(1.15, 1.15);
-    background-color: #555;
-}
-
-.straffon-about img {
-    margin: 0px;
-    padding: 0px;
-    width: 450px;
-    height: 400px;
-    float: left;
-    z-index: 4;
-}
-
-.straffon-about .caption {
-    cursor: pointer;
-    position: absolute;
+.center-text {
     opacity: 0;
-    transition:all 0.45s ease-in-out;
-}
-
-.straffon-about img {
-    transition:all 0.25s ease-in-out;
-}
-
-.straffon-about .blur {
-    background-color: rgba(0, 0, 0, 0.6);
-    height: 400px;
-    width: 450px;
-    z-index: 5;
     position: absolute;
-}
-
-.straffon-about .caption-text h3 {
-    text-transform: uppercase;
-    font-size: 22px;
-}
-
-.straffon-about .caption-text {
-    z-index: 10;
-    color: #fff;
-    position: absolute;
-    width: 450px;
-    height: 400px;
-    top: 100px;
-}
-
-.straffon-about .about-list li {
-    list-style: none;
-    margin-left: 15px;
-    padding: 0px;
-    text-align: left;
-    font-size: 18px;
-    margin-top: 15px;
-}
-
-.straffon-about .center-text li {
-    list-style: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 0px;
-    font-size: 18px;
-    margin-top: 15px;
+    transition: .5s ease;
+    width: 100%;
+    height: 100%;
 }
 
-.straffon-about .center-text .fix-text {
-    list-style: none;
-    padding: 0px;
-    font-size: 18px;
-    margin-left: 30px;
-    margin-top: 25px;
-
+.straffon-photo:hover .photo-text {
+    opacity: 0.3;
 }
+
+.straffon-photo:hover .center-text {
+    opacity: 1;
+}
+
+
+.text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+}
+
+
+
 
 
 
