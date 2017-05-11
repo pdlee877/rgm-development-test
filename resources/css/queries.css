@@ -9,6 +9,7 @@
     
     h1 { font-size: 180%; }
     h2 { font-size: 150%; }
+    h3 { font-size: 120%; }
 
     
 }
@@ -59,6 +60,8 @@
     
     .straffon-showcase li { width: 50%; }
     
+    .grid li { display: block; }
+    
 }
 
 
@@ -77,6 +80,8 @@
     .row, 
     .hero-text-box { padding: 0 4%; }
     
+    .grid li { display: block; }
+    
     .straffon-showcase li { width: 75%; }
 
 }
@@ -91,5 +96,13 @@
 
     .logo { height: 50px; }
     
-    h1 { font-size: 100%;}
+    h1 { font-size: 100%; }
+    h2 { font-size: 90%; }
+    h3 { font-size: 80%; }
+    
+    .grid li p {
+        font-size: 15px;
+    }
+    
+    
 }
