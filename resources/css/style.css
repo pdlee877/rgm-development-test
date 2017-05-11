@@ -408,6 +408,10 @@ header {
 	display: block;
 }
 
+.cs-style-1 figcaption p {
+    font-size: 16px;
+}
+
 
 
 
