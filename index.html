@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
         
         <title>Straffon Orthodontics</title>
@@ -15,7 +21,7 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/logo.png" alt="Straffon Orthodontics" class="logo">
-                    <ul class="main-nav">
+                    <ul class="main-nav js--main-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Why Straffon</a></li>
                         <li><a href="#">Signature Treatment</a></li>
@@ -23,15 +29,16 @@
                         <li><a href="#">Start Smiling</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
             <div class="hero-text-box">
-                <h1>Creating <span class="word-highlight">Extraordinary</span> Smiles</h1><div class="opacity-box"></div>
+                <h1>Creating <span class="word-highlight">Extraordinary</span> Smiles</h1>
             </div>
         </header>
         
         
-        <section class="section-about">
+        <section class="section-about js--section-about">
             <div class="row">
                 <h2>Welcome to Straffon Orthodontics</h2>
                 <p class="long-copy">
@@ -51,70 +58,76 @@
                 <h2>About Dr. Derek A. Straffon</h2>
             </div>
             
-            <ul class="straffon-about">
+            <ul class="straffon-showcase clearfix">
                 <li>
-                    <img src="resources/img/straffon.jpg" alt="">
-                    <div class="caption">
-                        <div class="blur"></div>
-                        <div class="caption-text">
+                    <div class="straffon-photo">
+                        <img src="resources/img/straffon-min.jpg" alt="straffon" class="photo-text">
+                        
+                        <div class="center-text">
                             <h3>Education</h3>
-                            <ul class="center-text">
-                                <li>Indiana University</li>
-                                <li>The University of Michigan School of Dentistry</li>
-                                <li class="fix-text">The University of Michigan Master of Science in Orthodontics</li>
-                            </ul>
+                            <div class="text">
+                             Indiana University<br>
+                             The University of Michigan School of Dentistry<br>
+                             The University of Michigan Master of Science in Orthodontics
+                            </div>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <img src="resources/img/color-block.jpg" alt="">
-                    <div class="caption">
-                        <div class="blur"></div>
-                        <div class="caption-text">
+                    <div class="straffon-photo">
+                        <img src="resources/img/color-block.jpg" alt="color-block" class="photo-text">
+                        
+                        <div class="center-text">
                             <h3>Honors</h3>
-                            <ul class="about-list">
-                                <li>Named Top Orthodontist by 5280 Magazine (2009-Present)</li>
-                                <li>Named Top Dentist by USA Top Dentists (2009-Present)</li>
-                                <li>The Charles H. Tweed International Foundation for International Research (April 1999)</li>
-                                <li>Omicron Kappa Upsilon Honorary Dental Society (February 1998)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="resources/img/color-block.jpg" alt="">
-                    <div class="caption">
-                        <div class="blur"></div>
-                        <div class="caption-text">
-                            <h3>Affiliations</h3>
-                            <ul class="center-text">
-                                <li>American Association of Orthodontists</li>
-                                <li>American Dental Association</li>
-                                <li>Colorado State Orthodontic Association</li>
-                                <li>Metropolitan Denver Dental Society</li>
-                                <li>Rocky Mountain Society of Orthodontists</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <img src="resources/img/group.jpg" alt="">
-                    <div class="caption">
-                        <div class="blur"></div>
-                        <div class="caption-text">
-                            <h3>Awards</h3>
-                            <ul class="about-list">
-                                <li>Thomas M. Graber Award of Special Merit (May 2002)</li>
-                                <li>Louis C. Shultz Award in Operative Rehabilitation (May 1998)</li>
-                                <li>Comprehensive Care Award (May 1998)</li>
-                                <li>Russel W. Bunting Award in Periodontics (August 1997)</li>
-                            </ul>
+                            <div class="text">
+                                Named Top Orthodontist by 5280 Magazine (2009-Present)
+                                Named Top Dentist by USA Top Dentists (2009-Present)<br>
+                                The Charles H. Tweed International Foundation for International Research (April 1999)<br>
+                                Omicron Kappa Upsilon Honorary Dental Society (February 1998)
+                            </div>
                         </div>
                     </div>
                 </li>
             </ul>
-
+            <ul class="straffon-showcase clearfix">
+                <li>
+                    <div class="straffon-photo">
+                        <img src="resources/img/color-block.jpg" alt="straffon" class="photo-text">
+                        <div class="center-text">
+                            <h3>Education</h3>
+                            <div class="text">
+                                American Association of Orthodontists<br>
+                                American Dental Association<br>
+                                Colorado State Orthodontic Association<br>
+                                Metropolitan Denver Dental Society<br>
+                                Rocky Mountain Society of Orthodontists
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="straffon-photo">
+                        <img src="resources/img/group-min.jpg" alt="color-block" class="photo-text">
+                        <div class="center-text">
+                            <h3>Awards</h3>
+                            <div class="text">
+                                Thomas A. Graber Award of Special Merit(May 2002)<br>
+                                Louis C. Shultz Award in Operative Rehabilitation(May 1998)<br>
+                                Comprehensive Care Award(May 1998)<br>
+                                Russel W. Bunting Award in Periodontics(August 1997)
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </section>
+        
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js">
+        </script>
+        <script src="resources/js/script.js"></script>
         
     </body>
 
