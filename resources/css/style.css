@@ -124,15 +124,17 @@ h3:after {
 header {
     background-image: url(img/hero2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     height: 100vh;
+    background-repeat: no-repeat;
 }
 
 .hero-text-box {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-38%, 325%);
     transform: translate(-38%, 325%);
     width: 1140px;
     height: 75px;
@@ -166,6 +168,7 @@ header {
     text-transform: uppercase;
     font-size: 95%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -224,6 +227,7 @@ header {
 /*---------------------*/
 
 .section-about {
+    background-image: -webkit-linear-gradient(rgba(85, 85, 85, 0.7), rgba(85, 85, 85, 0.7)), url(img/hero6.jpg);
     background-image: linear-gradient(rgba(85, 85, 85, 0.7), rgba(85, 85, 85, 0.7)), url(img/hero6.jpg);
     background-size: cover;
     background-position: center;
@@ -269,9 +273,11 @@ header {
 .straffon-photo img {
     opacity: 1;
     display: block;
+    -webkit-transition: .5s ease;
     transition: .5s ease;
     width: 100%;
     height: auto;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
@@ -280,7 +286,9 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -webkit-transition: .5s ease;
     transition: .5s ease;
     width: 100%;
     height: 100%;
