@@ -1,14 +1,25 @@
 $(document).ready(function() {
-    $('.js--section-about').waypoint(function(direction) {
+    
+    stickyNavigation();
+    hamburgerXMenuButton();
+        
+});
+
+
+
+var stickyNavigation = function() {
+   $('.js--section-about').waypoint(function(direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');
         } else {
             $('nav').removeClass('sticky');
         }
-    });
-    
-    
-    $('.js--nav-icon').click(function() {
+    }); 
+};
+
+
+var hamburgerXMenuButton = function() {
+   $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
         var icon = $('.js--nav-icon i');
         
@@ -21,7 +32,5 @@ $(document).ready(function() {
             icon.addClass('ion-navicon-round');
             icon.removeClass('ion-close-round');
         }
-    });
-    
-    
-});
+    }); 
+};
